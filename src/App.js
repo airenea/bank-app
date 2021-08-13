@@ -1,23 +1,18 @@
-import logo from './logo.svg';
-import './App.css';
+import React from 'react'
+import './App.css'
+import Navbar from './components/Navbar'
+import UserList from './components/UserList'
+import UnderNav from './components/UnderNav'
+import HelloUser from './components/HelloUser'
+
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-            Bank app in progress!
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <div className="pageWhole">
+    <Navbar />
+    <UnderNav />
+    <HelloUser />
+    <UserList />
     </div>
   );
 }

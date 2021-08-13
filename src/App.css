@@ -1,38 +1,139 @@
-.App {
+@import url('https://fonts.googleapis.com/css2?family=Nanum+Gothic+Coding&display=swap');
+
+html {font-size: 62.5%; font-family: 'Lato', 'Avenir', 'Century Gothic', sans-serif;
+  scroll-behavior: smooth;}
+
+body {
+  background-color: #FAFBFA;
+}
+
+li {
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+}
+
+#logo {
+  width: auto;
+  height: 40px;
+}
+
+.header{
+  border-bottom: 1px solid #E2E8F0;
+}
+
+
+.nav-bar {
+  position: fixed;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1rem 1.5rem;
+  background-color: #37483E;
+  width: 100%;
+  height: 40px;
+}
+
+.nav-menu {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  margin-right: 6%;
   text-align: center;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.nav-item {
+  margin-left: 2rem;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
+.nav-link{
+  font-size: 1.2rem;
+  font-weight: 400;
+  color: #FFFFFF;
+}
+
+.nav-link:hover{
+  color: #C1CFC7;
+}
+
+/*greeting*/
+.greeting {
+  width: 70%;
+  text-align: center;
+  margin: auto;
+  margin-top: 3vh;
+}
+
+/*table*/
+table {
+  width: 70%;
+  border-collapse: collapse;
+  margin: auto;
+  margin-top: 3vh;
+  border-bottom: 1px dashed #749481;
+  text-align: left;
+  font-family: 'Nanum Gothic Coding';
+}
+
+thead th {
+  text-align: left;
+  border-bottom: 1px dashed #749481;
+  font-family: 'Nanum Gothic Coding';
+}
+
+/* ↕ */
+
+thead button {
+  border: 0;
+  border-radius: none;
+  font-weight: 800;
+  font-size: 1em;
+  padding: 0.6em;
+  margin-bottom: 1px;
+  font-family: 'Nanum Gothic Coding';
+  background-color: #43574C;
+  color: #E0E7E3;
+  width: 100%;
+  text-align: left;
+}
+
+thead button::after {
+  content: '↕';
+  display: inline-block;
+  margin-left: 1em;
+  font-family: 'Nanum Gothic Coding';
+}
+
+thead button.ascending::after {
+  content: '↓';
+  display: inline-block;
+  margin-left: 1em;
+}
+
+thead button.descending::after {
+  content: '↑';
+  display: inline-block;
+  margin-left: 1em;
+}
+
+tbody td {
+  padding: 0.5em;
+}
+
+tbody tr:hover {
+  background-color: #D1DBD5;
+}
+
+@media only screen and (max-width: 650px) {
+  table {
+    width: 90%;
+    border-collapse: collapse;
+    margin: auto;
+    margin-top: 3vh;
   }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
-}
-
-.App-link {
-  color: #61dafb;
-}
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
+  .greeting {
+    width: 90%;
   }
 }
