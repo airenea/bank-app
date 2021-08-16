@@ -75,8 +75,8 @@ let UserDirectory = [
       creationday: '22'
     },
     { id: 8, 
-      surname: 'Roxy', 
-      firstname: 'Richter', 
+      surname: 'Richter', 
+      firstname: 'Roxy', 
       account: 12938104856372, 
       balance: 19232.18, 
       email: 'richterroxy@gmail.com',

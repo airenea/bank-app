@@ -2,6 +2,7 @@ import React, { useState } from 'react';
 import bankapplogo from '../logos/bankapp-logo.png'
 import PopUpNewUser from './popups/PopUpNewUser.js'
 import PopUpAdjust from './popups/PopUpNewUser.js'
+import NewUserForm from './popups/NewUserForm'
 
 function Navbar() {
     const [isOpenUser, setIsOpenUser] = useState(false);
@@ -23,7 +24,7 @@ function Navbar() {
                 {isOpenUser && <PopUpNewUser
                 content={<>
                     <b>Create a New User</b>
-                    <p>form here</p>
+                    <NewUserForm />
                 </>}
                 handleClose={togglePopUpUser}
                 />}
