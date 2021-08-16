@@ -17,10 +17,10 @@ function Navbar() {
     }
 
     return (
-      <nav class="nav-bar">
-        <a href="#" class="nav-logo"><img id="logo" src={bankapplogo} /></a>
-        <ul class="nav-menu">
-            <li class="nav-item">
+      <nav className="nav-bar">
+        <button className="nav-logo"><img id="logo" alt="logo" src={bankapplogo} /></button>
+        <ul className="nav-menu">
+            <li className="nav-item">
                 {isOpenUser && <PopUpNewUser
                 content={<>
                     <b>Create a New User</b>
@@ -28,9 +28,9 @@ function Navbar() {
                 </>}
                 handleClose={togglePopUpUser}
                 />}
-                <a onClick={togglePopUpUser} class="nav-link">New User</a>
+                <button onClick={togglePopUpUser} className="nav-link">New User</button>
             </li>
-            <li class="nav-item">
+            <li className="nav-item">
                 {isOpenAdjust && <PopUpAdjust
                 content={<>
                     <b>Adjust the Accounts</b>
@@ -38,10 +38,10 @@ function Navbar() {
                 </>}
                 handleClose={togglePopUpAdjust}
                 />}
-                <a onClick={togglePopUpAdjust} class="nav-link">Adjust Accounts</a>
+                <button onClick={togglePopUpAdjust} className="nav-link">Adjust Accounts</button>
             </li>
-            <li class="nav-item">
-                <a href="LINK" class="nav-link">Budget App</a>
+            <li className="nav-item">
+                <button className="nav-link">Budget App</button>
             </li>
         </ul>
     </nav>

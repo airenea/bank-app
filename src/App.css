@@ -54,10 +54,18 @@ a {
   font-weight: 400;
   color: #FFFFFF;
   cursor: pointer;
+  background-color: transparent;
+  font-family: 'Inter';
 }
 
 .nav-link:hover{
   color: #C1CFC7;
+}
+
+.nav-logo{
+  cursor: pointer;
+  background-color: transparent;
+  box-shadow: 0px 0px 0px;
 }
 
 /*table*/
