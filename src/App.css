@@ -88,12 +88,12 @@ thead th {
 thead button {
   border: 0;
   border-radius: none;
-  font-weight: 800;
+  font-weight: 700;
   font-size: 1em;
   padding: 0.6em;
   margin-bottom: 1px;
-  font-family: 'Nanum Gothic Coding';
-  background-color: #43574C;
+  font-family: 'Inter';
+  background-color: #5F7E6D;
   color: #E0E7E3;
   width: 100%;
   text-align: left;
@@ -126,6 +126,187 @@ tbody tr:hover {
   background-color: #D1DBD5;
 }
 
+/* CREATE USER */
+
+.createUserForm {
+  width: 70%;
+  text-align: center;
+  margin: auto;
+  margin-top: 1vh;
+  height: fit-content;
+  padding-top: 1.5vh;
+  padding-bottom: 1.5vh;
+  font-family: 'Nanum Gothic Coding';
+  background-color: #6D917D;
+  overflow: auto;
+}
+
+.formQuestion input {
+  height: 1.6vh;
+  font-family: 'Nanum Gothic Coding';
+  background-color: #FFFFFF;
+  padding-left:10px; 
+  width: 30%; 
+  margin-left:20px; 
+  font-size: 1.5vh;
+}
+
+.formQuestion label {
+  color: #F7F9F8;
+  display: inline-block; 
+  text-align: center; 
+  vertical-align: center; 
+  width:30%; 
+  font-weight:bold;
+  font-size: 1.5vh;
+}
+
+.formQuestion {
+  margin: 1%;
+}
+
+#submitCreate {
+  background-color: #7F9E8D;
+  font-family: 'Nanum Gothic Coding';
+  color: #FFFFFF;
+  font-size: 1.5vh;
+}
+
+/* WITHDRAW-DEPOSIT */
+
+.withdraw-deposit {
+  width: 70%;
+  text-align: center;
+  margin: auto;
+  margin-top: 1vh;
+  height: fit-content;
+  padding-top: 1.5vh;
+  padding-bottom: 1.5vh;
+  font-family: 'Nanum Gothic Coding';
+  background-color: #43574C;
+  overflow: auto;
+}
+
+#withdraw-deposit-accountlist {
+  height: 2.5vh;
+  font-family: 'Nanum Gothic Coding';
+  background-color: #FFFFFF;
+  padding-left:10px; 
+  width: 25%; 
+  font-size: 1.5vh;
+  text-align: center;
+}
+
+#currentBalance {
+  color: #FFFFFF;
+}
+
+.withdraw-deposit input {
+  height: 1.6vh;
+  font-family: 'Nanum Gothic Coding';
+  background-color: #FFFFFF;
+  padding-left:10px; 
+  width: 20%; 
+  margin-left:20px; 
+  font-size: 1.5vh;
+}
+
+.withdraw-deposit label {
+  color: #F7F9F8;
+  display: inline-block; 
+  text-align: center; 
+  vertical-align: center; 
+  width:10%; 
+  font-weight:bold;
+  font-size: 1.5vh;
+}
+
+#submitWithdrawDeposit {
+  background-color: #7F9E8D;
+  font-family: 'Nanum Gothic Coding';
+  color: #FFFFFF;
+  font-size: 1.5vh;
+}
+
+/* TRANSFER */
+
+.transfer {
+  width: 70%;
+  text-align: center;
+  margin: auto;
+  margin-top: 1vh;
+  height: fit-content;
+  padding-top: 1.5vh;
+  padding-bottom: 1.5vh;
+  font-family: 'Nanum Gothic Coding';
+  background-color: #37483E;
+  overflow: auto;
+  color: #FFFFFF;
+  margin-bottom: 2vh;
+}
+
+#transfer-arrow {
+  font-size: 3vh;
+  margin: 4%;
+}
+
+#transfer-accountone {
+  height: 2.5vh;
+  font-family: 'Nanum Gothic Coding';
+  background-color: #FFFFFF;
+  padding-left:10px; 
+  width: 25%; 
+  font-size: 1.5vh;
+  text-align: center;
+}
+
+#transfer-accounttwo {
+  height: 2.5vh;
+  font-family: 'Nanum Gothic Coding';
+  background-color: #FFFFFF;
+  padding-left:10px; 
+  width: 25%; 
+  font-size: 1.5vh;
+  text-align: center;
+}
+
+#currentBalance {
+  color: #FFFFFF;
+}
+
+.transfer input {
+  height: 1.6vh;
+  font-family: 'Nanum Gothic Coding';
+  background-color: #FFFFFF;
+  padding-left:10px; 
+  width: 20%; 
+  margin-left:20px; 
+  font-size: 1.5vh;
+}
+
+.transfer label {
+  color: #F7F9F8;
+  display: inline-block; 
+  text-align: center; 
+  vertical-align: center; 
+  width:10%; 
+  font-weight:bold;
+  font-size: 1.5vh;
+}
+
+#submitTransfer {
+  background-color: #7F9E8D;
+  font-family: 'Nanum Gothic Coding';
+  color: #FFFFFF;
+  font-size: 1.5vh;
+}
+
+.sectionHeader {
+  color: #FFFFFF;
+  font-size: 2vh;
+  font-family: 'Inter'
+}
+
 /* GREETING */
 
 .greeting {
@@ -133,11 +314,21 @@ tbody tr:hover {
   text-align: center;
   margin: auto;
   margin-top: 3vh;
-  height: 10vh;
-  border: 1px solid black;
-  padding-top: 1.5vh;
-  padding-bottom: 1.5vh;
+  height: fit-content;
+  padding-top: 1.5%;
+  padding-bottom: 1%;
+  background-color: #B7C8BE;
+  font-size: 2.5vh;
+  font-weight: 600;
+  color: #394A41;
 }
+
+.greeting-date {
+  font-size: 1.7vh;
+  font-weight: 300;
+  color: #303E36;
+}
+
 
 /* TRANSACTION HISTORY */
 
@@ -189,7 +380,19 @@ tbody tr:hover {
   color: #5F7E6D;
 }
 
-@media only screen and (max-width: 650px) {
+@media only screen and (max-width: 850px) {
+  .createUserForm {
+    width: 90%;
+  }
+
+  .withdraw-deposit {
+    width: 90%;
+  }
+
+  .transfer {
+    width: 90%;
+  }
+
   table {
     width: 90%;
     border-collapse: collapse;

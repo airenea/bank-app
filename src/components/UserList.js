@@ -1,5 +1,4 @@
 import React from 'react';
-import UserDirectory from './UserDirectory'
 
 const useSortableData = (items, config = null) => {
   const [sortConfig, setSortConfig] = React.useState(config);
@@ -116,12 +115,4 @@ const UserListTable = (props) => {
   );
 };
 
-export default function UserList() {
-  return (
-    <div className="UserList">
-      <UserListTable
-        users={UserDirectory}
-      />
-    </div>
-  );
-}
+export default UserListTable;
